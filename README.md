@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+Orchestration UI - User Search
+--------------------------------------------------
+Overview
+--------------------------------------------------
+This React-based frontend provides an interactive user search functionality integrated with the Orchestration API. It features typeahead/autocomplete search, fetching user details dynamically, and displaying user information upon selection.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+--------------------------------------------------
+Features
+--------------------------------------------------
 
-## Available Scripts
+🔍 Typeahead search for users by first name, last name, or SSN.
 
-In the project directory, you can run:
+📄 Displays user details, including an image, upon selection.
 
-### `npm start`
+⚡ Fetches data from the backend API (Spring Boot application).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎨 Responsive UI with clean design principles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🏗️ Follows Atomic Design, modular structure, and reusable components.
 
-### `npm test`
+🔥 Lazy loading for optimized performance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ Unit testing and error handling.
 
-### `npm run build`
+--------------------------------------------------
+Tech Stack
+--------------------------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend: React, React Router, Axios
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+State Management: React Hooks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Styling: CSS
 
-### `npm run eject`
+Build Tool: Create-React-App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+--------------------------------------------------
+Prerequisites
+--------------------------------------------------
+☑️ Node.js (v18+ recommended)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+☑️ npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+☑️ A running backend API (orchestration-api)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+--------------------------------------------------
+Setup & Installation
+--------------------------------------------------
 
-## Learn More
+Clone the Repository
+--------------------------------------------------
+	  git clone https://github.com/shubhamnandi41/orchestration-ui.git
+	  cd orchestration-ui
+	 
+--------------------------------------------------
+Install Dependencies
+--------------------------------------------------
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+	npm install  # or yarn install
+ --------------------------------------------------
+Run the Application
+--------------------------------------------------
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	npm start  # or yarn start
 
-### Code Splitting
+The UI will be available at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+--------------------------------------------------
+API Integration
+--------------------------------------------------
+The frontend interacts with the backend API for fetching users.
 
-### Analyzing the Bundle Size
+🔎 Search Users (Typeahead)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+	GET /api/users/search?query={text}
 
-### Making a Progressive Web App
+Fetches a filtered list of users based on free-text search.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📌 Get User Details
 
-### Advanced Configuration
+	GET /api/users/{id}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Retrieves full user details by ID.
 
-### Deployment
+--------------------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🚀 Future Enhancements
+--------------------------------------------------
 
-### `npm run build` fails to minify
+Improve UI accessibility and animations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Implement authentication for secure access.
+
+Add caching mechanisms for performance improvements.
+
+--------------------------------------------------
+📜 License
+--------------------------------------------------
+
+This project is licensed under the MIT License.
+
