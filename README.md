@@ -99,3 +99,12 @@ Add caching mechanisms for performance improvements.
 
 This project is licensed under the MIT License.
 
+-----------------------------------------------
+Author
+-----------------------------------------------
+Name: Shubham Nandi
+
+LinkedIn: https://www.linkedin.com/in/shubhamnandi41/
+
+Github: https://www.github.com/shubhamnandi41
+
