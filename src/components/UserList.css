@@ -1,0 +1,88 @@
+/* filepath: /d:/Intellij Workspace/orchestration-ui/src/components/UserList.css */
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.user-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-list-dropdown {
+    top: -60px;
+    left: 264px;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.user-name {
+    flex-grow: 1;
+}
+
+.user-ssn {
+    margin-left: 10px;
+    color: #999;
+}
+
+.no-users {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media  (max-width: 600px) {
+    .dropdown-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-ssn {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

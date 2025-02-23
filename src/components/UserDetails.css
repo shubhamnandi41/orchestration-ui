@@ -1,0 +1,59 @@
+/* filepath: /d:/Intellij Workspace/orchestration-ui/src/components/UserDetails.css */
+.user-details {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-details img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.user-details h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-details p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.user-details p span {
+    font-weight: bold;
+}
+
+.user-summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-image {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.user-info h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user-info p {
+    margin: 0;
+    color: #666;
+}

@@ -1,0 +1,42 @@
+/* filepath: /d:/Intellij Workspace/orchestration-ui/src/components/Tabs.css */
+.tabs {
+    display: flex;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.tab-button {
+    padding: 20px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: left;
+    width: 150px;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tab-button:not(.active):hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    flex-grow: 1;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    text-align: start;
+    display: block;
+}

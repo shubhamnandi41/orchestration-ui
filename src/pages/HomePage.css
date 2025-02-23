@@ -1,0 +1,163 @@
+/* filepath: /d:/Intellij Workspace/orchestration-ui/src/pages/HomePage.css */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    width: 30%;
+}
+
+.home-page h1 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.loading,
+.error {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading {
+    color: #007bff;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.home-page .search-bar,
+
+.home-page .user-details {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.home-page .user-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 70%;
+    max-width: 600px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+    width: 70%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.user-list .user-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-list .user-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-details {
+    max-width: 90%;
+    margin-top: -20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.user-summary img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.user-info h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user-info p {
+    margin: 0;
+    color: #666;
+}
+
+.details-and-tabs {
+    display: flex;
+    width: 100%;
+}
+
+.no-users {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .home-page {
+        padding: 10px;
+    }
+
+    .user-list {
+        width: 100%;
+    }
+
+    .user-list .user-item {
+        width: 100%;
+    }
+
+    .search-bar input {
+        padding: 8px;
+    }
+}

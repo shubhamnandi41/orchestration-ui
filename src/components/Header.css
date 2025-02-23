@@ -1,0 +1,20 @@
+/* filepath: /d:/Intellij Workspace/orchestration-ui/src/components/Header.css */
+.header {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.header .search-bar {
+    width: 100%;
+    max-width: 600px;
+}
